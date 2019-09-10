@@ -10,14 +10,14 @@
 
   <ion-card>
     <ion-card-content>
-      <ion-input placeholder="Text for translation..."></ion-input>
-      <ion-button expand="block">Translate</ion-button>
+      <ion-input [(ngModel)]="input" placeholder="Text for translation..."></ion-input>
+      <ion-button (click)="btnTranslateClicked()" expand="block">Translate</ion-button>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-content>
-      Input <ion-icon name="arrow-forward"></ion-icon> Output
+      {{ input }} <ion-icon name="arrow-forward"></ion-icon> Output
     </ion-card-content>
   </ion-card>
 

@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  input:String
+
+  constructor() {
+    // testing
+    // this.input = 'K prekladu...';
+  }
+
+  public btnTranslateClicked():void{
+    // console.log(this.input);
+
+    // TODO: call a translation API
+  }
 
 }
